@@ -9,34 +9,44 @@
     <title>Anand Baburajan</title>
     <style>
     	body {
-    	    background-color: #0B0E0E;
-    	    color: #ffffff;
-    	    font-family: 'IBM Plex Sans', sans-serif;
-    	    font-size: 1.3em;
+    	  background-color: #0B0E0E;
+    	  color: #ffffff;
+    	  font-family: 'IBM Plex Sans', sans-serif;
     	}
     	a {
-    	   text-decoration: underline;
-    	   color: #ffffff;
+    	 text-decoration: underline;
+    	 color: #ffffff;
     	}
+    	.container {
+    	  font-size: 1.3em;
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+    	}
+	@media (min-width: 600px) {
+	 .container {
+	     font-size: 3em;
+	 }
+	}
     </style>
   </head>
   <body>
-    Hi there — I’m Anand Baburajan.
-    <p>
-    I'm on <a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>.<br>
-    I'm on <a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>.<br>
-    I'm on <a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a> too.<br>
-    </p>
-    <p>
-    <a href="https://anandbaburajan.github.io/static/resume.pdf" target="_blank">Here</a>'s my resume.
-    </p>
-    <p>
-    <a href="mailto:anandbaburajan@gmail.com" target="_blank">Here</a>'s my email address.
-    </p>
-    <!--
-    <p>
-    <a href="https://www.youtube.com/watch?v=sYmQQn_ZSys">Here</a>'s a rocket's first stage landing on a droneship.
-    </p>
-    --> 
+    <div class="container">
+      Hi there!
+      <p>
+        I'm on <a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>.<br>
+        I'm on <a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>.<br>
+        I'm on <a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a> too.
+      </p>
+      <p>
+        <a href="https://anandbaburajan.github.io/static/resume.pdf" target="_blank">Here</a>'s my resume.<br>
+        <a href="mailto:anandbaburajan@gmail.com" target="_blank">Here</a>'s my email address.
+      </p>
+      <p>
+        <a href="https://www.youtube.com/watch?v=sYmQQn_ZSys" target="_blank">Here</a>'s a rocket landing.
+      </p>
+    </div>
   </body>
 </html>
