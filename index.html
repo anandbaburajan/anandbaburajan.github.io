@@ -15,30 +15,31 @@
       content="Hi! I'm Anand. Welcome to my space on the internet! These days I'm learning computer science and building Kukkee."
     />
     <style>
-	/* roboto-mono-regular - latin */
-	@font-face {
-	  font-family: 'Roboto Mono', monospace;
-	  font-style: normal;
-	  font-weight: 400;
-	  src: local(''),
-	       url('./static/roboto-mono-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-	       url('./static/roboto-mono-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-	       url('./static/roboto-mono-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-	}
-	/* roboto-mono-700 - latin */
-	@font-face {
-	  font-family: 'Roboto Mono', monospace;
-	  font-style: normal;
-	  font-weight: 700;
-	  src: local(''),
-	       url('./static/roboto-mono-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-	       url('./static/roboto-mono-v21-latin-700.woff') format('woff'), /* Modern Browsers */
-	       url('./static/roboto-mono-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-	}
+		/* roboto-mono-regular - latin */
+		@font-face {
+		  font-family: 'Roboto Mono', monospace;
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local(''),
+			    url('./static/roboto-mono-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+			    url('./static/roboto-mono-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+			    url('./static/roboto-mono-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		}
+		/* roboto-mono-700 - latin */
+		@font-face {
+		  font-family: 'Roboto Mono', monospace;
+		  font-style: normal;
+		  font-weight: 700;
+		  src: local(''),
+			    url('./static/roboto-mono-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+			    url('./static/roboto-mono-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+			    url('./static/roboto-mono-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+		}
       body {
         background: #020C1E;
         color: #CED1D5;
         font-family: "Roboto Mono", monospace;
+        line-height: 24px;
       }
       a {
         color: #CED1D5;
@@ -53,17 +54,27 @@
         margin: 0;
         padding: 1em;
       }
-      @media (min-width: 942px) {
-        #container {
-          font-size: 1em;
-          margin: 0;
-          transform: translate(-50%, 0%);
-          position: absolute;
-          margin-top: 2em;
-          left: 50%;
-        }
-      }
-
+      #contact-desktop {
+	   	display: none;
+	   }
+      @media (min-width: 1054px) {
+			 #container {
+				 font-size: 1em;
+				 margin: 0;
+				 transform: translate(-50%, 0%);
+				 position: absolute;
+				 margin-top: 2em;
+				 left: 50%;
+			 }
+	   }
+      @media (min-width: 572px) {
+			#contact-desktop {
+				display: unset;
+			}
+			#contact-mobile {
+				display: none;
+			}
+	   }
       ::-webkit-scrollbar {
         width: 10px;
       }
@@ -127,17 +138,32 @@
           >here</a
         >'s a video of a rocket landing. Because why not?
       </p>
-      <p>
-        Connect with me on
-        <a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
-        <a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
-        or
-        <a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a>.<br>
-        Thinking about working together?
-        <a href="https://anandbaburajan.github.io/static/anand_baburajan.pdf" target="_blank">Here</a>'s my résumé.<br>
-        <a href="https://cal.com/anandbaburajan/hello" target="_blank">Jump</a> on a quick Sunday evening call with me.<br>
-        <a href="mailto:anandbaburajan@gmail.com" target="_blank">Get in touch</a> via email.
-      </p>
+      <div id="contact-desktop">
+		   <p>
+				Connect with me on
+				<a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
+				<a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
+				or
+				<a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a>.<br>
+				Thinking about working together?
+				<a href="https://anandbaburajan.github.io/static/anand_baburajan.pdf" target="_blank">Here</a>'s my résumé.<br>
+				<a href="https://cal.com/anandbaburajan/hello" target="_blank">Jump</a> on a quick Sunday evening call with me.<br>
+				<a href="mailto:anandbaburajan@gmail.com" target="_blank">Get in touch</a> via email.
+		   </p>
+		</div>
+      <div id="contact-mobile">
+		   <p>
+				Connect with me on
+				<a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
+				<a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
+				or
+				<a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a>.
+				Thinking about working together?
+				<a href="https://anandbaburajan.github.io/static/anand_baburajan.pdf" target="_blank">Here</a>'s my résumé.
+				Feel free to <a href="https://cal.com/anandbaburajan/hello" target="_blank">jump</a> on a quick Sunday evening call with me or
+				<a href="mailto:anandbaburajan@gmail.com" target="_blank">get in touch</a> via email.
+		   </p>
+		</div>
       :)
     </div>
   </body>
