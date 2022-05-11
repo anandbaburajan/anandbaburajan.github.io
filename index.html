@@ -12,25 +12,36 @@
     />
     <meta
       name="description"
-      content="Hello! I'm Anand. Welcome to my space on the internet! These days I'm learning computer science and building Kukkee."
+      content="Hi! I'm Anand. Welcome to my space on the internet! These days I'm learning computer science and building Kukkee."
     />
     <style>
-      @font-face {
-        font-family: "Space Grotesk";
-        font-style: normal;
-        font-weight: 500;
-        font-display: block;
-        src: local(""),
-          url("./static/space-grotesk-v5-latin-500.woff2") format("woff2"),
-          url("./static/space-grotesk-v5-latin-500.woff") format("woff");
-      }
+	/* roboto-mono-regular - latin */
+	@font-face {
+	  font-family: 'Roboto Mono', monospace;
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local(''),
+	       url('./static/roboto-mono-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('./static/roboto-mono-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+	       url('./static/roboto-mono-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	}
+	/* roboto-mono-700 - latin */
+	@font-face {
+	  font-family: 'Roboto Mono', monospace;
+	  font-style: normal;
+	  font-weight: 700;
+	  src: local(''),
+	       url('./static/roboto-mono-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+	       url('./static/roboto-mono-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+	       url('./static/roboto-mono-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+	}
       body {
-        background: #000101;
-        color: #c8c8c8;
-        font-family: "Space Grotesk";
+        background: #020C1E;
+        color: #CED1D5;
+        font-family: "Roboto Mono", monospace;
       }
       a {
-        color: #c8c8c8;
+        color: #CED1D5;
         text-decoration: underline;
         text-underline-offset: 0.1em;
       }
@@ -42,9 +53,9 @@
         margin: 0;
         padding: 1em;
       }
-      @media (min-width: 600px) {
+      @media (min-width: 942px) {
         #container {
-          font-size: 1.2em;
+          font-size: 1em;
           margin: 0;
           transform: translate(-50%, 0%);
           position: absolute;
@@ -72,9 +83,9 @@
   </head>
   <body>
     <div id="container">
-      <p>
-      	Hello! I'm Anand.
-      </p>
+      <h1>
+      	Hi! I'm Anand.
+      </h1>
       <p>
         These days I'm learning computer science and building
         <a href="https://www.kukkee.com/" target="_blank">Kukkee</a>.
@@ -111,29 +122,23 @@
         watching movies, exploring our planet, reading about startups, and experiencing something different.
       </p>
       <p>
-        Feel free to
-        <a href="mailto:anandbaburajan@gmail.com" target="_blank">get in touch</a>
-        via email, <a href="https://cal.com/anandbaburajan/hello" target="_blank">jump</a>
-        on a quick Sunday evening call or connect with me on
-        <a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
-        <a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
-        or
-        <a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank"
-          >LinkedIn</a
-        >. I’m always open to interesting conversations and collaboration!
-        Thinking about working together?
-        <a
-          href="https://anandbaburajan.github.io/static/anand_baburajan.pdf"
-          target="_blank"
-          >Here</a
-        >'s my résumé.
-      </p>
-      <p>
       	Alright, since you've read this far,
         <a href="https://www.youtube.com/watch?v=sYmQQn_ZSys" target="_blank"
           >here</a
         >'s a video of a rocket landing. Because why not?
       </p>
+      <p>
+        Connect with me on
+        <a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
+        <a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
+        or
+        <a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a>.<br>
+        Thinking about working together?
+        <a href="https://anandbaburajan.github.io/static/anand_baburajan.pdf" target="_blank">Here</a>'s my résumé.<br>
+        <a href="https://cal.com/anandbaburajan/hello" target="_blank">Jump</a> on a quick Sunday evening call with me.<br>
+        <a href="mailto:anandbaburajan@gmail.com" target="_blank">Get in touch</a> via email.
+      </p>
+      :)
     </div>
   </body>
 </html>
