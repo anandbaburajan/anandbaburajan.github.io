@@ -39,7 +39,7 @@
         background: #020C1E;
         color: #CED1D5;
         font-family: "Roboto Mono", monospace;
-        line-height: 24px;
+        line-height: 22px;
       }
       a {
         color: #CED1D5;
@@ -50,31 +50,35 @@
         text-decoration: underline dotted;
       }
       #container {
-        font-size: 1em;
+        font-size: 0.9em;
         margin: 0;
-        padding: 1em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
       }
       #contact-desktop {
-	   	display: none;
-	   }
-      @media (min-width: 1054px) {
-			 #container {
-				 font-size: 1em;
-				 margin: 0;
-				 transform: translate(-50%, 0%);
-				 position: absolute;
-				 margin-top: 2em;
-				 left: 50%;
-			 }
-	   }
+	display: none;
+      }
       @media (min-width: 572px) {
-			#contact-desktop {
-				display: unset;
-			}
-			#contact-mobile {
-				display: none;
-			}
-	   }
+	#contact-desktop {
+		display: unset;
+	}
+	#contact-mobile {
+		display: none;
+	}
+	body {
+		line-height: 24px;
+	}
+      }
+      @media (min-width: 1054px) {
+	 #container {
+		 font-size: 1em;
+		 margin: 0;
+		 transform: translate(-50%, 0%);
+		 position: absolute;
+		 margin-top: 2em;
+		 left: 50%;
+	 }
+      }
       ::-webkit-scrollbar {
         width: 10px;
       }
