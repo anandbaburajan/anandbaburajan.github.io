@@ -5,44 +5,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="./static/fav.ico" sizes="any">
-    <meta
-      name="title"
-      content="Anand Baburajan"
-    />
+    <link rel="icon" href="./static/fav.ico" sizes="any" />
+    <meta name="title" content="Anand Baburajan" />
     <meta
       name="description"
-      content="Hello human! I'm Anand. Welcome to my space on the internet! These days I'm learning computer science and building Kukkee."
+      content="Welcome to Anand's space on the internet!"
     />
     <style>
-		/* roboto-mono-regular - latin */
-		@font-face {
-		  font-family: 'Roboto Mono', monospace;
-		  font-style: normal;
-		  font-weight: 400;
-		  src: local(''),
-			    url('./static/roboto-mono-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-			    url('./static/roboto-mono-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-			    url('./static/roboto-mono-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		}
-		/* roboto-mono-700 - latin */
-		@font-face {
-		  font-family: 'Roboto Mono', monospace;
-		  font-style: normal;
-		  font-weight: 700;
-		  src: local(''),
-			    url('./static/roboto-mono-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-			    url('./static/roboto-mono-v21-latin-700.woff') format('woff'), /* Modern Browsers */
-			    url('./static/roboto-mono-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-		}
+      @font-face {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        src: local(""),
+          url("./static/space-grotesk-v5-latin-500.woff2") format("woff2"),
+          url("./static/space-grotesk-v5-latin-500.woff") format("woff");
+      }
       body {
-        background: #020C1E;
-        color: #CED1D5;
-        font-family: "Roboto Mono", monospace;
-        line-height: 24px;
+        background: #010100;
+        color: #FFF8E7;
+        font-family: "Space Grotesk";
       }
       a {
-        color: #CED1D5;
+        color: #FFF8E7;
         text-decoration: underline;
         text-underline-offset: 0.1em;
       }
@@ -52,37 +36,17 @@
       #container {
         font-size: 1em;
         margin: 0;
-        padding: 0.8em;
+        padding: 1em;
       }
-      #contact-desktop {
-	display: none;
-      }
-      @media (min-width: 572px) {
-	#contact-desktop {
-		display: unset;
-	}
-	#contact-mobile {
-		display: none;
-	}
-      }
-      @media (min-width: 1054px) {
-	 #container {
-		 transform: translate(-50%, 0%);
-		 position: absolute;
-		 margin-top: 2em;
-		 left: 50%;
-	 }
-      }
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #1a1a1a;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #b1b1b1;
+      @media (min-width: 600px) {
+        #container {
+          font-size: 1.5em;
+          margin: 0;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
       }
     </style>
     <meta
@@ -92,76 +56,36 @@
   </head>
   <body>
     <div id="container">
-      <h1>
-      	Hello human, 
-      </h1>
+      Hi — I'm Anand.
       <p>
-        I'm Anand. These days I'm learning computer science and building
-        <a href="https://www.kukkee.com/" target="_blank">Kukkee</a>.
-        Previously, I worked at
-        <a href="https://www.hackerrank.com/" target="_blank">HackerRank</a> as
-        a software engineer intern, where I built the HackerRank Interviews for Slack
-        integration and a bunch of features for HackerRank for Work. I was a
+        Connect with me on
+        <a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a
+        >,
+        <a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
+        or
+        <a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank"
+          >LinkedIn</a
+        >.
+      </p>
+      <p>
+        Thinking about working together?
         <a
-          href="https://summerofcode.withgoogle.com/archive/2020/projects/5402292951449600"
+          href="https://anandbaburajan.github.io/static/anand_baburajan.pdf"
           target="_blank"
-          >Google Summer of Code '20</a
-        >
-        developer at
-        <a href="https://libertem.github.io/LiberTEM" target="_blank">LiberTEM</a>,
-        where I enhanced the data pipeline to allow reshaping pixelated STEM datasets and built
-        a feature for handling datasets with sync/acquisition issues.
-        That experience really changed the way I look at open source, which led me to start
-        <a href="https://openhack.gitbook.io/openhack-20/" target="_blank"
-          >FOSS OpenHack '20</a
-        >
-        — a program which helped 25+ students with building 10+ open source
-        projects and contributing to 5+ major open source
-        projects. I helped build my parents'
-        <a href="https://www.telecomlead.com/" target="_blank">news sites</a>
-        in WordPress and did freelance WordPress development for 5+ clients.
-        During high school, I wrote articles and produced tech YouTube videos at GizmoLead.
-      </p>
-      <p>I meditate, work out, go running with my brother and dog, love an awe-inspiring
-        and sweet human, stargaze, read books and blogs, and cook okay-ish dinner and wash dishes while listening to music or podcasts.
-        I enjoy asking questions, learning and building things, software engineering, understanding my brain, exploring real-world problems,
-	hanging out with loved ones, meeting new people and learning from them,
-        building communities, watching movies, exploring our planet, and experiencing something different.
-	I used to play football and video games (my favorites were Halo and Minecraft).
+          >Here</a
+        >'s my résumé.
       </p>
       <p>
-      	Alright, since you've read this far,
-        <a href="https://www.youtube.com/watch?v=A0FZIwabctw" target="_blank"
-          >here</a
-        >'s a video of an incredible team of humans shooting a car into space and making rockets land. Because why not?
+        <a href="https://cal.com/anandbaburajan/hello" target="_blank">Jump</a>
+        on a quick Sunday evening call with me.
       </p>
-      <div id="contact-desktop">
-		   <p>
-				Connect with me on
-				<a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
-				<a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
-				or
-				<a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a>.<br>
-				Thinking about working together?
-				<a href="https://anandbaburajan.github.io/static/anand_baburajan.pdf" target="_blank">Here</a>'s my résumé.<br>
-				<a href="https://cal.com/anandbaburajan/hello" target="_blank">Jump</a> on a quick Sunday evening call with me.<br>
-				<a href="mailto:anandbaburajan@gmail.com" target="_blank">Get in touch</a> via email.
-		   </p>
-		</div>
-      <div id="contact-mobile">
-		   <p>
-				Connect with me on
-				<a href="https://twitter.com/anandbaburajan" target="_blank">Twitter</a>,
-				<a href="https://github.com/anandbaburajan/" target="_blank">GitHub</a>
-				or
-				<a href="https://www.linkedin.com/in/anandbaburajan/" target="_blank">LinkedIn</a>.
-				Thinking about working together?
-				<a href="https://anandbaburajan.github.io/static/anand_baburajan.pdf" target="_blank">Here</a>'s my résumé.
-				Feel free to <a href="https://cal.com/anandbaburajan/hello" target="_blank">jump</a> on a quick Sunday evening call with me or
-				<a href="mailto:anandbaburajan@gmail.com" target="_blank">get in touch</a> via email.
-		   </p>
-		</div>
-      :)
+      <p>
+        <a href="mailto:anandbaburajan@gmail.com" target="_blank"
+          >Get in touch</a
+        >
+        via email.
+      </p>
+      : )
     </div>
   </body>
 </html>
