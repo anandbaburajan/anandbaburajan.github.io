@@ -3,6 +3,13 @@
   <head>
     <title>Anand Baburajan</title>
     <link rel="icon" type="image/x-icon" href="./static/favicon.ico" />
+    <link
+      rel="preload"
+      href="./static/dm-sans.woff"
+      as="font"
+      type="font/woff"
+      crossorigin
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,6 +46,9 @@
       .text-link {
         text-decoration: underline;
         text-underline-offset: 2px;
+      }
+      .font-loading .text-link {
+        text-decoration: none;
       }
       .text-p {
         margin-top: 0rem;
@@ -91,6 +101,12 @@
         }
       }
     </style>
+    <script>
+      document.documentElement.classList.add("font-loading");
+      document.fonts.load('1rem "DM Sans"').finally(() => {
+        document.documentElement.classList.remove("font-loading");
+      });
+    </script>
     <meta
       name="google-site-verification"
       content="GKjFsC7okWqqrYECQDwvMTs6L6J6mtwsJL3pep51pxk"
